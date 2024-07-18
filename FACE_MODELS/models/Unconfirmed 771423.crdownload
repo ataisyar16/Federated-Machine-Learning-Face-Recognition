@@ -1,0 +1,11 @@
+const canvas = require("canvas");
+const faceapi = require("face-api.js");
+const { Canvas, Image, ImageData } = canvas;
+faceapi.env.monkeyPatch({ Canvas, Image, ImageData });
+
+async function loadModels() {
+  const modelPath = "/models";
+  await faceapi.nets.ssdMobilenetv1.loadFromDisk(modelPath);
+  await faceapi.nets.faceLandmark68Net.loadFromDisk(modelPath);
+  await faceapi.nets.faceRecognitionNet.loadFromDisk(modelPath);
+}

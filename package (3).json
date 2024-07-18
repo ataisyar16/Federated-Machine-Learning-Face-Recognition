@@ -1,0 +1,23 @@
+{
+  "name": "capsone-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js",
+    "start-server": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tensorflow/tfjs-node": "^4.18.0",
+    "canvas": "^2.11.2",
+    "cors": "^2.8.5",
+    "express-fileupload": "^1.5.0",
+    "face-api.js": "^0.22.2",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^3.1.0"
+  }
+}
